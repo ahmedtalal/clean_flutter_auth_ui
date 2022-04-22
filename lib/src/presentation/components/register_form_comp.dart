@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_registeration_ui/src/core/utils/app_colors.dart';
 import 'package:flutter_registeration_ui/src/core/utils/constants.dart';
-import 'package:flutter_registeration_ui/src/core/utils/screen_settings.dart';
 import 'button_comp.dart';
 import 'text_form_comp.dart';
 
@@ -29,7 +28,7 @@ class RegisterFormComp extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           const Text(
-            "nice to see you again,nice to see you again,nice to see you again",
+            "Nice to see you in our app,here is the register page and you can create new account from here",
             style: TextStyle(
               fontSize: 15,
               fontFamily: Constants.appFont,

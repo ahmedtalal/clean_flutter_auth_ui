@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_registeration_ui/src/core/utils/app_colors.dart';
 import 'package:flutter_registeration_ui/src/core/utils/constants.dart';
+import 'package:flutter_registeration_ui/src/core/utils/screen_settings.dart';
 import 'button_comp.dart';
 import 'text_form_comp.dart';
 
@@ -28,7 +29,7 @@ class LoginFormComp extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           const Text(
-            "nice to see you again,nice to see you again,nice to see you again",
+            "nice to see you again,if you have an account you can login from here",
             style: TextStyle(
               fontSize: 15,
               fontFamily: Constants.appFont,
@@ -50,7 +51,26 @@ class LoginFormComp extends StatelessWidget {
             onChangeListener: (newValue) {},
             prefixIconData: Icons.lock,
           ),
-          const SizedBox(height: 20),
+          Container(
+            width: ScreenSettings.getFullWidth(),
+            height: ScreenSettings.setScreenHeight(context, 0.045),
+            alignment: Alignment.centerRight,
+            child: InkWell(
+              onTap: () {
+                /// move ip forget password page here
+              },
+              child: const Text(
+                "Forgot Password ?",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontFamily: Constants.appFont,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.grey,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 18),
           ButtonComp(
             title: "Login",
             onClick: () {},

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/utils/app_colors.dart';
 import '../../core/utils/constants.dart';
 import '../../core/utils/screen_settings.dart';
-import 'switcher_comp.dart';
+import 'switch_auth_comp.dart';
 
 class LogoAuthSectionComp extends StatelessWidget {
   final VoidCallback loginonPressed;
@@ -50,12 +50,12 @@ class LogoAuthSectionComp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Switcher(
+                SwitchAuthComp(
                   title: "Login",
                   onPressed: loginonPressed,
                   titleUnderlineColor: loginedColor,
                 ),
-                Switcher(
+                SwitchAuthComp(
                   title: "Register",
                   onPressed: registeronPressed,
                   titleUnderlineColor: registeredColor,

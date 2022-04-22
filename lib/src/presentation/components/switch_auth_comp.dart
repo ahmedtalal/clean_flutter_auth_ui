@@ -3,11 +3,11 @@ import 'package:flutter_registeration_ui/src/core/utils/screen_settings.dart';
 import '../../core/utils/app_colors.dart';
 import '../../core/utils/constants.dart';
 
-class Switcher extends StatelessWidget {
+class SwitchAuthComp extends StatelessWidget {
   final String? title;
   final VoidCallback onPressed;
   final Color titleUnderlineColor;
-  const Switcher({
+  const SwitchAuthComp({
     Key? key,
     required this.title,
     required this.onPressed,

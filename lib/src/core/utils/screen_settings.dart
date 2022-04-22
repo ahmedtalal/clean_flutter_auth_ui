@@ -12,4 +12,6 @@ class ScreenSettings {
       _getScreenHeight(context) * height;
   static double setScreenWidth(BuildContext context, double width) =>
       _getScreenWidth(context) * width;
+  static double getFullWidth() => double.maxFinite;
+  static double getFulleight() => double.maxFinite;
 }
